@@ -11,11 +11,19 @@ html * {
 }
 body {
     background-color: #9E9E9E;
+    font-family: monospace;
     padding: 0;
 }
 a {
-    text-decoration: none;
     cursor: pointer;
+}
+.red-bg-white-txt {
+  background-color: #b61827;
+  color: white;
+}
+.text-editor-background {
+  background-color: #1E1E1E;
+  color: #D3D3D3;
 }
 /*navigation bar*/
 header {
@@ -42,16 +50,33 @@ header img {
 
 /*content*/
 .content {
-    padding: 50px;
+    padding: 0 50px;
 }
 .section{
     border-bottom: 1px solid black;
 }
 
 /*banner*/
-#banner div {
+#banner {
+  width: 100%;
+}
+#banner > div {
+    padding: 15em 10em;
     display: inline-block;
-    align-self: center;
+    margin: 0 auto;
+}
+#banner a {
+  font-weight: bold;
+  font-size: 115%;
+}
+#banner a:visited {
+  text-decoration: none;
+  color: #D4D4D4;
+}
+#banner div p {
+  font-size: 130%;
+  font-weight: 500;
+  align-content: center;
 }
 #banner div ul {
     list-style: none;
