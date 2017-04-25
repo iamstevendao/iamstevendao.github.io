@@ -55,7 +55,17 @@ header img {
     display: flex;
     flex-direction: row;
 }
-
+/*footer*/
+footer {
+  height: 60px;
+  padding: 5px;
+  background-color: #1E1E1E;
+  color: #D4D4D4;
+}
+footer p {
+  text-align: right;
+  margin-right: 10px;
+}
 /*content*/
 .content {
     padding: 0 50px;
@@ -522,3 +532,5 @@ header img {
     background-image: url("../img/interest/liverpool.jpg");
     background-size: cover;
 }
+.mySlides {display:none}
+.demo {cursor:pointer}

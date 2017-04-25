@@ -6,7 +6,7 @@
   <title>Steven's Portfolio</title>
   <link rel="icon" href="../img/logo/logo.jpg">
   <link rel="stylesheet" href="../css/style.css">
-  <link href="../css/hover-min.css" rel="stylesheet">
+  <link href="../css/hover-min.css" rel="stylesheet"><link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
   <script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
   <script src="../js/modernizr.js"></script>
@@ -29,22 +29,36 @@
   </header>
   <div class="content">
     <div id="banner" class="section text-editor-background">
-      <div> 
+      <div>
         <p>
           <span style="color: #618A51">//This is me</span>
           </br>
-          <span style="color: #54C8B0">Portfolio </span><span style="color:#D4D4D4">steven = </span><span style="color: #589CD3">new </span><span style="color: #54C8B0">Portfolio</span><span style="color: #D4D4D4">() {</span>
-          </br>
-          <span style="color: #9DDBFB; padding-left: 3em">Profile </span>
-          <span style="color: #D4D4D4">= </span><a target="_blank" href="https://www.linkedin.com/in/steven-dao-b9a065127/" >LinkedIn</a><span style="color: #D4D4D4">;</span>
-          </br>
-          <span style="color: #9DDBFB; padding-left: 3em">Projects </span>
-          <span style="color: #D4D4D4">= </span><span style="color: #589CD3">new </span><span style="color: #54C8B0">Project</span><span style="color:#D4D4D4">[] { </span><a target="_blank" href="https://github.com/iamstevendao">Github</a><span style="color: #D4D4D4">, </span></span><a target="_blank" href="https://bitbucket.org/fukie/" >Bitbucket</a><span style="color: #D4D4D4">};</span>
-          </br>
-          <span style="color: #9DDBFB; padding-left: 3em">Codings </span>
-          <span style="color: #D4D4D4">= </span><span style="color: #589CD3">new </span><span style="color: #54C8B0">Coding</span><span style="color:#D4D4D4">[] { </span><a target="_blank" href="https://codefights.com/profile/steven_dao">Codefights</a><span style="color: #D4D4D4">, </span></span><a target="_blank" href="http://codepen.io/iamstevendao/"> CodePen</a><span style="color: #D4D4D4">, </span></span><a target="_blank" href="https://www.freecodecamp.com/iamstevendao" >FreeCodeCamp</a><span style="color: #D4D4D4">};</span>
-          </br>
-          <span style="color: #D4D4D4">}</span>
+          <span style="color: #54C8B0">Portfolio </span><span style="color:#D4D4D4">steven = </span><span style="color: #589CD3">new </span>
+          <span
+            style="color: #54C8B0">Portfolio</span><span style="color: #D4D4D4">() {</span>
+            </br>
+            <span style="color: #9DDBFB; padding-left: 3em">Profile </span>
+            <span style="color: #D4D4D4">= </span><a target="_blank" href="https://www.linkedin.com/in/steven-dao-b9a065127/">LinkedIn</a>
+            <span
+              style="color: #D4D4D4">;</span>
+              </br>
+              <span style="color: #9DDBFB; padding-left: 3em">Projects </span>
+              <span style="color: #D4D4D4">= </span><span style="color: #589CD3">new </span><span style="color: #54C8B0">Project</span>
+              <span
+                style="color:#D4D4D4">[] { </span><a target="_blank" href="https://github.com/iamstevendao">Github</a><span style="color: #D4D4D4">, </span></span>
+                <a
+                  target="_blank" href="https://bitbucket.org/fukie/">Bitbucket</a><span style="color: #D4D4D4">};</span>
+                  </br>
+                  <span style="color: #9DDBFB; padding-left: 3em">Codings </span>
+                  <span style="color: #D4D4D4">= </span><span style="color: #589CD3">new </span><span style="color: #54C8B0">Coding</span>
+                  <span
+                    style="color:#D4D4D4">[] { </span><a target="_blank" href="https://codefights.com/profile/steven_dao">Codefights</a><span style="color: #D4D4D4">, </span></span>
+                    <a
+                      target="_blank" href="http://codepen.io/iamstevendao/"> CodePen</a><span style="color: #D4D4D4">, </span></span><a target="_blank" href="https://www.freecodecamp.com/iamstevendao">FreeCodeCamp</a>
+                      <span
+                        style="color: #D4D4D4">};</span>
+                        </br>
+                        <span style="color: #D4D4D4">}</span>
         </p>
       </div>
     </div>
@@ -105,7 +119,25 @@
     </div>
 
     <div id="interest" class="section">
-      <div id="bg-liverpool" class="div-interest">
+      <div class="w3-content" style="max-width:1200px">
+        <img class="mySlides" src="img_nature_wide.jpg" style="width:100%">
+        <img class="mySlides" src="img_fjords_wide.jpg" style="width:100%">
+        <img class="mySlides" src="img_mountains_wide.jpg" style="width:100%">
+
+        <div class="w3-row-padding w3-section">
+          <div class="w3-col s4">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="img_nature_wide.jpg" style="width:100%" onmouseover="currentDiv(1)">
+          </div>
+          <div class="w3-col s4">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="img_fjords_wide.jpg" style="width:100%" onmouseover="currentDiv(2)">
+          </div>
+          <div class="w3-col s4">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="img_mountains_wide.jpg" style="width:100%" onmouseover="currentDiv(3)">
+          </div>
+        </div>
+      </div>
+
+      <!--<div id="bg-liverpool" class="div-interest">
         <div class="hvr-float-shadow div-interest-content">
           <img class="hover-border-effect" src="../img/interest/steven-gerrard.png">
         </div>
@@ -119,13 +151,13 @@
         <div class="hvr-float-shadow div-interest-content">
           <img class="hover-border-effect" src="../img/interest/earthshaker.png">
         </div>
-      </div>
+      </div>-->
     </div>
     <div id="education" class="section"></div>
     <div id="archiements" class="section"></div>
   </div>
   <footer>
-
+      <p>&copy; Steven Dao 2017</p>
   </footer>
   <script src="../js/animation.js"></script>
 </body>
