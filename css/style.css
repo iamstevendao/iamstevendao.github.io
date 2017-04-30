@@ -13,11 +13,6 @@ a {
 
 /*coding*/
 
-.text-editor-background {
-	background-color: #1E1E1E;
-	color: #D3D3D3;
-}
-
 .color-comment {
 	color: #618A51;
 }
@@ -132,6 +127,8 @@ footer p {
 	width: 100%;
 	display: flex;
 	align-items: center;
+	background-color: #1E1E1E;
+	color: #D3D3D3;
 }
 
 
@@ -201,38 +198,60 @@ footer p {
 	padding: 30px;
 }
 
-.div-interest {
-	width: 33%;
-	display: inline-block;
+#interest ul {
+	list-style: none;
 }
 
-.div-interest img {
-	width: 80%;
+.col30 {
+	width: 30%;
 }
 
-.div-interest-content {
-	margin: 0 auto;
-}
-
-.hover-border-effect:hover {
-	-webkit-filter: drop-shadow(3px 3px 0 white) drop-shadow(-3px -3px 0 white);
-	filter: drop-shadow(3px 3px 0 white) drop-shadow(-3px -3px 0 white);
-}
-
-.bg-image {
-	width: 100%;
-	z-index: -1;
-}
-
-.hightlight-image {
-	z-index: 1;
-	margin-top: -500px;
+.col70 {
+	width: 70%;
 }
 
 .mySlides {
-	display: none
+	width: 100%;
+	-webkit-animation: zoom 50s;
+	/* Chrome, Safari, Opera */
+	animation: zoom 50s;
 }
 
-.demo {
-	cursor: pointer
+.badge {
+	background-color: transparent;
+	display: inline-block;
+	padding-left: 8px;
+	padding-right: 8px;
+	text-align: center;
+	border: 1px solid #ccc;
+	padding: 0;
+	cursor: default;
+}
+
+.badge:hover {
+	background-color: white;
+}
+
+
+/* Chrome, Safari, Opera */
+
+@-webkit-keyframes zoom {
+	from {
+		-webkit-transform: scale(1, 1);
+	}
+	to {
+		-webkit-transform: scale(1.5, 1.5);
+	}
+}
+
+
+/* Standard syntax */
+
+@keyframes zoom {
+	from {
+		transform: scale(1, 1);
+	}
+	to {
+		transform: scale(1.5, 1.5);
+	}
 }

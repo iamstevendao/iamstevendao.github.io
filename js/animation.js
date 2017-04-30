@@ -28,9 +28,11 @@ function showDivs(n) {
 	}
 	for (i = 0; i < dots.length; i++) {
 		dots[i].style.backgroundColor = "transparent";
+		dots[i].style.color = "#D4D4D4";
 	}
 	x[slideIndex - 1].style.display = "block";
 	dots[slideIndex - 1].style.backgroundColor = "white";
+	dots[slideIndex - 1].style.color = "black";
 	timer = setTimeout(function () {
 		plusDivs(1)
 	}, 3000);
