@@ -1,9 +1,25 @@
 /*general*/
 
+html {
+	box-sizing: border-box
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit
+}
+
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%
+}
+
 body {
 	background-color: #333333;
 	font-family: Monaco;
 	padding: 0;
+	margin: 0;
 }
 
 a {
