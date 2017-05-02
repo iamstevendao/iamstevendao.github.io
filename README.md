@@ -4,7 +4,7 @@ My portfolio website
 Credits:
 - Code Syntax and Style: C#.
 - Code Highlight, Editor Background: Visual Studio Code
-- [Open Sans Font](https://fonts.googleapis.com/css?family=Open+Sans
+- [Open Sans Font](https://fonts.googleapis.com/css?family=Open+Sans)
 - [Animate on Scroll](https://github.com/michalsnik/aos)
 - [Scattered Polaroids Gallery](https://github.com/codrops/ScatteredPolaroidsGallery)
 
