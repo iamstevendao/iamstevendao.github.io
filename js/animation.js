@@ -1,12 +1,8 @@
-var slideIndex = 1;
-var timer;
-var firsttime = true;
 $(document).ready(function () {
-
-
 	AOS.init({
 		easing: 'ease-in-out-sine'
 	});
+
 	showDivs(slideIndex);
 	$('#gallery-toggle').click(function () {
 		$('#gallery').toggleClass('active');
@@ -17,7 +13,34 @@ $(document).ready(function () {
 			firsttime = false;
 		}
 	});
+
+	$(".nav-bar ul li").click(function () {
+		var pos = '';
+		switch ($(this).prevAll().length) {
+			case 0:
+				pos = "#banner";
+				break;
+			case 1:
+				pos = "#timeline";
+				break;
+			case 2:
+				pos = "#interest";
+				break;
+			case 3:
+				pos = "#projects";
+				break;
+		}
+		$('html, body').animate({
+			'scrollTop': $(pos).position().top - 80
+		});
+
+	});
 });
+
+
+var slideIndex = 1;
+var timer;
+var firsttime = true;
 
 function plusDivs(n) {
 	showDivs(slideIndex += n);
