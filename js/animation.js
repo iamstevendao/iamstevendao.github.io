@@ -65,12 +65,11 @@ function showDivs(n) {
 		x[i].style.display = "none";
 	}
 	for (i = 0; i < dots.length; i = i + 2) {
-		dots[i].style.backgroundColor = "transparent";
+		dots[i].style.backgroundColor = "black";
 		dots[i].style.color = "#D4D4D4";
 	}
 	x[slideIndex - 1].style.display = "block";
-	//    dots[slideIndex * 2 - 1].style.backgroundColor = "white ";
-	//    dots[slideIndex * 2 - 1].style.color = "black";
+	$('#interest').css('background-image', 'url(' + x[slideIndex - 1].getAttribute("src") + ')');
 	dots[slideIndex * 2 - 2].style.backgroundColor = "white";
 	dots[slideIndex * 2 - 2].style.color = "black";
 
