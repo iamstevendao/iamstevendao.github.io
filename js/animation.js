@@ -13,6 +13,7 @@ $(document).ready(function () {
 
 	$(".nav-bar ul li").click(function () {
 		var pos = '';
+		var x = -30;
 		switch ($(this).prevAll().length) {
 			case 0:
 				pos = "#banner";
@@ -22,13 +23,14 @@ $(document).ready(function () {
 				break;
 			case 2:
 				pos = "#interest";
+				x = 130;
 				break;
 			case 3:
 				pos = "#projects";
 				break;
 		}
 		$('html, body').animate({
-			'scrollTop': $(pos).position().top - 80
+			'scrollTop': $(pos).position().top - x
 		});
 
 	});
