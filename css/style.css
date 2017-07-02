@@ -2,10 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @font-face {
-	font-family: 'Menlo Regular';
+	font-family: 'Menlo';
 	font-style: normal;
 	font-weight: normal;
-	src: local('Menlo Regular'), url('/font/Menlo-Regular.woff') format('woff');
+	src: url(https://github.com/martin-brennan/martin-brennan/blob/master/fonts/menlo-webfont.ttf) format("truetype");
 }
 
 html {
@@ -28,7 +28,7 @@ html {
 
 body {
 	background-color: #1E1E1E;
-	font-family: 'Menlo Regular', 'Open Sans', sans-serif;
+	font-family: 'Menlo', 'Open Sans', sans-serif;
 	padding: 0;
 	margin: 0;
 	height: 100%;
@@ -86,19 +86,19 @@ p {
 }
 
 .weight-strong {
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .weight-light {
 	opacity: 0.3;
-	font-weight: 300;
+	font-weight: 200;
 }
 
 .link {
 	position: relative;
 	text-decoration: none;
 	display: inline-block;
-	font-weight: 700;
+	font-weight: 500;
 	padding: 0 1px;
 	opacity: 0.99;
 	transition: color ease 0.3s;
