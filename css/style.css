@@ -8,6 +8,13 @@
 	src: url(https://github.com/martin-brennan/martin-brennan/blob/master/fonts/menlo-webfont.ttf) format("truetype");
 }
 
+@font-face {
+	font-family: 'Menlo Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: url(/font/Menlo-Regular.woff) format("woff");
+}
+
 html {
 	box-sizing: border-box
 }
@@ -28,7 +35,7 @@ html {
 
 body {
 	background-color: #1E1E1E;
-	font-family: 'Menlo', 'Open Sans', sans-serif;
+	font-family: 'Menlo Regular', 'Open Sans', sans-serif;
 	padding: 0;
 	margin: 0;
 	height: 100%;
