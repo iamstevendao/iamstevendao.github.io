@@ -1,20 +1,5 @@
 /*general*/
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@font-face {
-	font-family: 'Menlo';
-	font-style: normal;
-	font-weight: normal;
-	src: url(https://github.com/martin-brennan/martin-brennan/blob/master/fonts/menlo-webfont.ttf) format("truetype");
-}
-
-@font-face {
-	font-family: 'Menlo Regular';
-	font-style: normal;
-	font-weight: normal;
-	src: url(/font/Menlo-Regular.woff) format("woff");
-}
-
 html {
 	box-sizing: border-box
 }
@@ -35,7 +20,7 @@ html {
 
 body {
 	background-color: #1E1E1E;
-	font-family: 'Menlo Regular', 'Open Sans', sans-serif;
+	font-family: monaco, sans-serif;
 	padding: 0;
 	margin: 0;
 	height: 100%;
@@ -105,7 +90,7 @@ p {
 	position: relative;
 	text-decoration: none;
 	display: inline-block;
-	font-weight: 500;
+	font-weight: 600;
 	padding: 0 1px;
 	opacity: 0.99;
 	transition: color ease 0.3s;
