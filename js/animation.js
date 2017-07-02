@@ -26,6 +26,7 @@ $(document).ready(function () {
 				x = 130;
 				break;
 			case 3:
+				x = 0;
 				pos = "#projects";
 				break;
 		}
