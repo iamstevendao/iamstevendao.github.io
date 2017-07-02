@@ -1,6 +1,13 @@
 /*general*/
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@font-face {
+	font-family: 'Menlo Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Menlo Regular'), url('/font/Menlo-Regular.woff') format('woff');
+}
+
 html {
 	box-sizing: border-box
 }
@@ -21,7 +28,7 @@ html {
 
 body {
 	background-color: #1E1E1E;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Menlo Regular', 'Open Sans', sans-serif;
 	padding: 0;
 	margin: 0;
 	height: 100%;
@@ -29,6 +36,10 @@ body {
 
 a {
 	cursor: pointer;
+}
+
+p {
+	opacity: 0.9;
 }
 
 
@@ -75,9 +86,7 @@ a {
 }
 
 .weight-strong {
-	opacity: 1;
-	font-weight: 600;
-	font-size: 110%;
+	font-weight: 500;
 }
 
 .weight-light {
@@ -89,9 +98,11 @@ a {
 	position: relative;
 	text-decoration: none;
 	display: inline-block;
+	font-weight: 700;
 	padding: 0 1px;
 	opacity: 0.99;
 	transition: color ease 0.3s;
+	font-size: 110%;
 }
 
 .link:after {
@@ -99,7 +110,7 @@ a {
 	position: absolute;
 	z-index: -1;
 	width: 100%;
-	height: 5%;
+	height: 0;
 	left: 0;
 	bottom: 0;
 	transition: all ease 0.3s;
@@ -123,6 +134,10 @@ a {
 
 .link-variable:after {
 	background-color: #9DDBFB;
+}
+
+.link-class:after {
+	background-color: #54C8B0;
 }
 
 
@@ -185,15 +200,16 @@ header img {
 
 .content {
 	padding: 0 50px;
-	height: 100%;
+	margin: 0 auto;
+	min-width: 1000px;
 }
 
 .section {
 	width: 100%;
 	display: flex;
 	align-items: center;
-	padding: 10em 5em;
-	height: 100%;
+	padding: 100px 0;
+	height: 500px;
 	overflow: hidden;
 	background-attachment: fixed;
 	background-position: center;
@@ -221,11 +237,7 @@ header img {
 /*banner*/
 
 #banner {
-	height: 100%;
-}
-
-#banner>div {
-	font-size: 130%;
+	height: 100vh;
 }
 
 #banner span {
@@ -236,17 +248,24 @@ header img {
 /*timeline*/
 
 #timeline {
-	height: 130%;
+	height: 1000px;
 }
 
 
 /*interest*/
+
+#interest {
+	height: 500px;
+}
 
 #interest>div {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+}
+
+#interest>div>div {
 	background-color: rgba(52, 73, 94, 0.75);
 }
 
@@ -262,32 +281,19 @@ header img {
 	width: 70%;
 }
 
-.outer-shadow,
 .photostack figure {
 	-webkit-box-shadow: 0px 0px 41px 4px rgba(0, 0, 0, 0.9);
 	-moz-box-shadow: 0px 0px 41px 4px rgba(0, 0, 0, 0.9);
 	box-shadow: 0px 0px 41px 4px rgba(0, 0, 0, 0.9);
 }
 
-.box-border {
-	border: 5px solid black;
-	overflow: hidden;
-}
-
-.inner-shadow {
-	position: relative;
-	-webkit-box-shadow: inset 0px 0px 110px 26px rgba(0, 0, 0, 0.9);
-	-moz-box-shadow: inset 0px 0px 110px 26px rgba(0, 0, 0, 0.9);
-	box-shadow: inset 0px 0px 110px 26px rgba(0, 0, 0, 0.9);
+.hide {
+	display: none;
 }
 
 .mySlides {
 	position: relative;
 	width: 100%;
-	-webkit-animation: zoom 30s;
-	/* Chrome, Safari, Opera */
-	animation: zoom 30s;
-	z-index: -1;
 }
 
 .badge {
@@ -306,30 +312,6 @@ header img {
 .badge:hover {
 	background-color: white;
 	color: black;
-}
-
-
-/* Chrome, Safari, Opera */
-
-@-webkit-keyframes zoom {
-	from {
-		-webkit-transform: scale(1, 1);
-	}
-	to {
-		-webkit-transform: scale(1.5, 1.5);
-	}
-}
-
-
-/* Standard syntax */
-
-@keyframes zoom {
-	from {
-		transform: scale(1, 1);
-	}
-	to {
-		transform: scale(1.5, 1.5);
-	}
 }
 
 
@@ -396,7 +378,7 @@ header img {
 /*projects*/
 
 #projects {
-	height: 150%;
+	height: 1200px;
 }
 
 
