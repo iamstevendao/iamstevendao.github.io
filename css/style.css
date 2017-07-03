@@ -1,5 +1,6 @@
 /*general*/
 
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 html {
 	box-sizing: border-box
 }
@@ -20,7 +21,7 @@ html {
 
 body {
 	background-color: #1E1E1E;
-	font-family: monaco, sans-serif;
+	font-family: 'Source Code Pro', monaco, sans-serif;
 	padding: 0;
 	margin: 0;
 	height: 100%;
@@ -78,7 +79,7 @@ p {
 }
 
 .weight-strong {
-	font-weight: 400;
+	font-weight: 300;
 }
 
 .weight-light {
