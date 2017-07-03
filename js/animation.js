@@ -77,3 +77,11 @@ function showDivs(n) {
 		plusDivs(1)
 	}, 2000);
 }
+
+function currentDiv2(n) {
+	showDivs2();
+}
+
+function showDivs2() {
+	$('#projects').css('background-image', 'url(/img/interest/bg-dragonball.jpg)');
+}

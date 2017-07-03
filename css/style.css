@@ -177,13 +177,13 @@ header img {
 /*footer*/
 
 .footer {
-	height: 100px;
+	height: 15vh;
 	background-color: #1E1E1E;
 	color: #D4D4D4;
 }
 
 .footer p {
-	line-height: 80px;
+	line-height: 15vh;
 	text-align: right;
 	margin-right: 50px;
 }
@@ -376,7 +376,45 @@ header img {
 
 /*credit*/
 
+#credit {
+	height: 85vh;
+}
+
 #credit span {
 	font-size: 120%;
 	margin-bottom: 2px;
+}
+
+
+/*typewritter*/
+
+.anim-typewriter {
+	display: block;
+	position: relative;
+	border-right: 2px solid rgba(255, 255, 255, .75);
+	white-space: nowrap;
+	overflow: hidden;
+	transform: translateY(-50%);
+	animation: typewriter 1.5s steps(17) 0s 1 normal both, blinkTextCursor 500ms steps(17) infinite normal;
+}
+
+
+/* Animation */
+
+@keyframes typewriter {
+	from {
+		width: 0;
+	}
+	to {
+		width: 168px;
+	}
+}
+
+@keyframes blinkTextCursor {
+	from {
+		border-right-color: rgba(255, 255, 255, .75);
+	}
+	to {
+		border-right-color: transparent;
+	}
 }
