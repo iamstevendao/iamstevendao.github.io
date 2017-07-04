@@ -178,14 +178,16 @@ header img {
 
 .footer {
 	height: 15vh;
+	padding-top: 30px;
+	padding-right: 50px;
 	background-color: #1E1E1E;
 	color: #D4D4D4;
+	display: flex;
+	justify-content: flex-end;
 }
 
-.footer p {
-	line-height: 15vh;
-	text-align: right;
-	margin-right: 50px;
+.footer span {
+	height: 20px;
 }
 
 
@@ -371,6 +373,12 @@ header img {
 
 #projects {
 	height: 1500px;
+	padding: 0;
+}
+
+#projects-container {
+	background-color: #1E1E1E;
+	opacity: 0.9;
 }
 
 
@@ -395,7 +403,7 @@ header img {
 	white-space: nowrap;
 	overflow: hidden;
 	transform: translateY(-50%);
-	animation: typewriter 1.5s steps(17) 0s 1 normal both, blinkTextCursor 500ms steps(17) infinite normal;
+	animation: typewriter 1.5s steps(17) 0s 1 both, blinkTextCursor 1s steps(17) infinite normal;
 }
 
 
@@ -412,7 +420,7 @@ header img {
 
 @keyframes blinkTextCursor {
 	from {
-		border-right-color: rgba(255, 255, 255, .75);
+		border-right-color: rgba(255, 255, 255);
 	}
 	to {
 		border-right-color: transparent;
