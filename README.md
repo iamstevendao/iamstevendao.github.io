@@ -3,7 +3,7 @@ My portfolio website
 
 Credits:
 - Code Syntax and Style: C#.
-- Code highlight, Editor background Color: Visual Studio Code
+- Code highlight, Editor background Color: [Visual Studio Code] (https://code.visualstudio.com/)
 - Font: Monaco
 - [Scattered Polaroids Gallery](https://github.com/codrops/ScatteredPolaroidsGallery)
 
