@@ -11,16 +11,14 @@ $(document).ready(function () {
 		}
 	});
 
-	$(".project-name").mouseover(function () {
+	$(".project-name").hover(function () {
 		var index = $(".project-name").index(this);
 		$("#projects p").css('opacity', '0.2');
 		all[index].style.opacity = 1;
 		all[index].style.backgroundColor = '#0B0B0B';
 		console.log('url(' + "/img/projects/" + $(this).html() + ".jpg)");
 		$("#projects").css('background-image', 'url(' + "/img/projects/" + $(this).html() + ".jpg)");
-	});
-
-	$(".project-name").mouseleave(function () {
+	}, function () {
 		$("#projects p").css('opacity', '1');
 		$("#projects p").css('background-color', 'transparent');
 		$("#projects").css('background-image', 'none');
