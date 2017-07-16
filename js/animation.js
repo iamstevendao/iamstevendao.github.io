@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+	var all = $(".project");
 	showDivs(slideIndex);
 	$('#gallery-toggle').click(function () {
 		$('#gallery').toggleClass('active');
@@ -9,6 +9,21 @@ $(document).ready(function () {
 			});
 			firsttime = false;
 		}
+	});
+
+	$(".project-name").mouseover(function () {
+		var index = $(".project-name").index(this);
+		$("#projects p").css('opacity', '0.2');
+		all[index].style.opacity = 1;
+		all[index].style.backgroundColor = '#0B0B0B';
+		console.log('url(' + "/img/projects/" + $(this).html() + ".jpg)");
+		$("#projects").css('background-image', 'url(' + "/img/projects/" + $(this).html() + ".jpg)");
+	});
+
+	$(".project-name").mouseleave(function () {
+		$("#projects p").css('opacity', '1');
+		$("#projects p").css('background-color', 'transparent');
+		$("#projects").css('background-image', 'none');
 	});
 
 	$(".nav-bar ul li").click(function () {
@@ -37,7 +52,6 @@ $(document).ready(function () {
 	});
 });
 
-
 var slideIndex = 1;
 var timer;
 var firsttime = true;
@@ -53,8 +67,8 @@ function currentDiv(n) {
 function showDivs(n) {
 	clearTimeout(timer);
 	var i;
-	var x = document.getElementsByClassName("mySlides");
-	var dots = document.getElementsByClassName("badge");
+	var x = $(".mySlides");
+	var dots = $(".badge");
 	if (n > x.length) {
 		slideIndex = 1;
 	}
