@@ -17,7 +17,7 @@ $(document).ready(function () {
 		all[index].style.opacity = 1;
 		all[index].style.backgroundColor = '#0B0B0B';
 		console.log('url(' + "../img/projects/" + $(this).html() + ".jpg)");
-		$("#projects").css('background-image', 'url(' + "/img/projects/" + $(this).html() + ".jpg)");
+		$("#projects").css('background-image', 'url(' + "../img/projects/" + $(this).html() + ".jpg)");
 	}, function () {
 		$("#projects p").css('opacity', '1');
 		$("#projects p").css('background-color', 'transparent');
