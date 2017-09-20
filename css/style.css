@@ -132,7 +132,9 @@ p {
 .link-class:after {
 	background-color: #54C8B0;
 }
-
+.link-comment:after {
+	background-color: #618A51;
+}
 
 /*navigation bar*/
 
