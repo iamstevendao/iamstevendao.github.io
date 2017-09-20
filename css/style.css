@@ -34,41 +34,36 @@ a {
 
 p {
 	opacity: 0.9;
-	font-size: 0;
-}
-
-p > span {
-	font-size: 16px;
-	display: inline-block;
 }
 
 /*coding*/
 
-.color-comment {
+.cl-cmt {
 	color: #618A51;
 }
 
-.color-text {
+.cl-txt {
 	color: #D4D4D4;
 }
 
-.color-reserved-key {
+.cl-key {
 	color: #589CD3;
 }
 
-.color-class {
+.cl-cls {
 	color: #54C8B0;
 }
 
-.color-string {
+.cl-str {
 	color: #CD917A;
 }
 
-.color-variable {
+.cl-var {
 	color: #9DDBFB;
 }
 
-.color-method {
+/* color-function */
+.cl-fn { 
 	color: #DCDCAD;
 }
 
@@ -84,11 +79,11 @@ p > span {
 	padding-left: 9em;
 }
 
-.weight-strong {
+.w-str {
 	font-weight: 300;
 }
 
-.weight-light {
+.w-wk {
 	opacity: 0.4;
 	font-weight: 200;
 }
