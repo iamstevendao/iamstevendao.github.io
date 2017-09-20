@@ -83,7 +83,7 @@ p {
 }
 
 .weight-light {
-	opacity: 0.3;
+	opacity: 0.4;
 	font-weight: 200;
 }
 
@@ -275,12 +275,6 @@ header img {
 
 .col70 {
 	width: 70%;
-}
-
-.photostack figure {
-	-webkit-box-shadow: 0px 0px 41px 4px rgba(0, 0, 0, 0.9);
-	-moz-box-shadow: 0px 0px 41px 4px rgba(0, 0, 0, 0.9);
-	box-shadow: 0px 0px 41px 4px rgba(0, 0, 0, 0.9);
 }
 
 .hide {
