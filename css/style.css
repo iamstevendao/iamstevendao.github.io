@@ -29,12 +29,18 @@ body {
 
 a {
 	cursor: pointer;
+	text-decoration: none;
 }
 
 p {
 	opacity: 0.9;
+	font-size: 0;
 }
 
+p > span {
+	font-size: 16px;
+	display: inline-block;
+}
 
 /*coding*/
 
@@ -89,7 +95,6 @@ p {
 
 .link {
 	position: relative;
-	text-decoration: none;
 	display: inline-block;
 	font-weight: 600;
 	padding: 0 1px;
