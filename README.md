@@ -7,7 +7,7 @@ Credits:
 - Code Syntax and Style: C#.
 - Code highlight, Editor background Color: [Visual Studio Code](https://code.visualstudio.com/)
 - Font: Monaco
-- [Scattered Polaroids Gallery](https://github.com/codrops/ScatteredPolaroidsGallery)
+- [~~Scattered Polaroids Gallery~~](https://github.com/codrops/ScatteredPolaroidsGallery)
 
 - Images:
   - [Naruto](http://wallpaper-gallery.net/images/wallpaper-laptop-naruto/wallpaper-laptop-naruto-23.jpg)

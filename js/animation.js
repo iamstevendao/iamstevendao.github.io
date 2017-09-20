@@ -1,15 +1,6 @@
 $(document).ready(function () {
 	var all = $(".project");
 	showDivs(slideIndex);
-	$('#gallery-toggle').click(function () {
-		$('#gallery').toggleClass('active');
-		if (firsttime) {
-			new Photostack(document.getElementById('photostack-1'), {
-				callback: function (item) { }
-			});
-			firsttime = false;
-		}
-	});
 
 	$(".project-name").hover(function () {
 		var index = $(".project-name").index(this);
