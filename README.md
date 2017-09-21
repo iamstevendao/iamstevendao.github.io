@@ -1,5 +1,7 @@
-# Portfolio Website
-My [portfolio website](http://stevend.tk/) built with HTML, CSS, JQuery  
+# Portfolio Website (Old version full of HTML and CSS)
+The old version of my [portfolio website](https://iamstevendao.github.io/portfolio-html/) built with HTML, CSS, JQuery  
+
+## Check out the new version built with AngularJS here: [iamstevendao/portfolio](https://github.com/iamstevendao/portfolio)
 
 [![@iamstevendao](https://img.shields.io/badge/twitter-@iamstevendao-blue.svg)](https://twitter.com/iamstevendao) [![@linkedin](https://img.shields.io/badge/LinkedIn-@iamstevendao-blue.svg)](https://www.linkedin.com/in/steven-dao-b9a065127/)
 
